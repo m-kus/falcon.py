@@ -5,11 +5,11 @@
 - the Fast Fourier sampling (only in FFT)
 .
 """
-from common import split, merge                         # Split, merge
-from fft import add, sub, mul, div, adj                 # Operations in coef.
-from fft import add_fft, sub_fft, mul_fft, div_fft, adj_fft  # Ops in FFT
-from fft import split_fft, merge_fft, fft_ratio         # FFT
-from samplerz import samplerz                           # Gaussian sampler in Z
+from falcon.common import split, merge                         # Split, merge
+from falcon.fft import add, sub, mul, div, adj                 # Operations in coef.
+from falcon.fft import add_fft, sub_fft, mul_fft, div_fft, adj_fft  # Ops in FFT
+from falcon.fft import split_fft, merge_fft, fft_ratio         # FFT
+from falcon.samplerz import samplerz                           # Gaussian sampler in Z
 
 
 def gram(B):
