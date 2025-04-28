@@ -4,18 +4,18 @@ This file implements tests for various parts of the Falcon.py library.
 Test the code with:
 > make test
 """
-from common import q, sqnorm
-from fft import add, sub, mul, div, neg, fft, ifft
-from ntt import mul_zq, div_zq
-from samplerz import samplerz, MAX_SIGMA
-from ffsampling import ffldl, ffldl_fft, ffnp, ffnp_fft
-from ffsampling import gram
+from falcon.common import q, sqnorm
+from falcon.fft import add, sub, mul, div, neg, fft, ifft
+from falcon.ntt import mul_zq, div_zq
+from falcon.samplerz import samplerz, MAX_SIGMA
+from falcon.ffsampling import ffldl, ffldl_fft, ffnp, ffnp_fft
+from falcon.ffsampling import gram
 from random import randint, random, gauss, uniform
 from math import sqrt, ceil
-from ntrugen import karamul, ntru_gen, gs_norm
-from falcon import SecretKey, PublicKey, Params
-from falcon import SALT_LEN, HEAD_LEN, SHAKE256
-from encoding import compress, decompress
+from falcon.ntrugen import karamul, ntru_gen, gs_norm
+from falcon.falcon import SecretKey, PublicKey, Params
+from falcon.falcon import SALT_LEN, HEAD_LEN, SHAKE256
+from falcon.encoding import compress, decompress
 from scripts import saga
 from scripts.samplerz_KAT512 import sampler_KAT512
 from scripts.sign_KAT import sign_KAT
